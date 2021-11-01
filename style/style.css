@@ -64,8 +64,10 @@ background-repeat: no-repeat; display: flex; flex-direction: column; align-items
 .menu button:hover {background-color: #B85C38;}
 
 /* SOBRE NÓS */
-.sobre-n {height: 400px; background-color: red; display: flex; flex-direction: column; align-items: center;}
-.sobre-n h1{margin-top: 0;padding-top: 20px;}
+.sobre-n {height: 400px; background-color: #B85C38; display: flex; flex-direction: column; align-items: center;}
+.sobre-n h1{margin-top: 0;padding-top: 20px; color: #2D2424;}
 .sobre-n ul {display: flex; flex-direction: row;}
-.sobre-n ul li {margin-right: 5px;}
+.sobre-n ul li {margin-right: 5px; background-size: 100% 100%; width: 200px; height: 300px;}
+.sobre-n ul li:hover {background-color: #5C3D2E; opacity: 70%;}
+
 
