@@ -39,37 +39,44 @@
 		<article class="sobre-n">
 			<h1>Sobre Nós</h1>
 			<ul>
-				<li style="background-image: url(imagens/profissional.jpg);" onmouseover= "surgir_texto1()" onmouseout= "apagar_texto1()"><p style="color: black; margin-top: 80px;" id="texto1"></p></li>
-				<li style="background-image: url(imagens/profissional2.jpg);" onmouseover= "surgir_texto2()" onmouseout= "apagar_texto2()"><p style="color: black; margin-top: 80px;" id="texto2"></p></li>
-				<li style="background-image: url(imagens/profissional3.jpg);" onmouseover= "surgir_texto3()" onmouseout= "apagar_texto3()"><p style="color: black; margin-top: 80px;" id="texto3"></p></li>
+				<li style="background-image: url(imagens/profissional.jpg);" onmouseover= "surgir_texto('texto1')" onmouseout= "apagar_texto('texto1')"><p style="color: black; margin-top: 80px;" id="texto1"></p></li>
+				<li style="background-image: url(imagens/profissional2.jpg);" onmouseover= "surgir_texto('texto2')" onmouseout= "apagar_texto('texto2')"><p style="color: black; margin-top: 80px;" id="texto2"></p></li>
+				<li style="background-image: url(imagens/profissional3.jpg);" onmouseover= "surgir_texto('texto3')" onmouseout= "apagar_texto('texto3')"><p style="color: black; margin-top: 80px;" id="texto3"></p></li>
 			</ul>
 		</article>
 
 		<script type="text/javascript">
-			function surgir_texto1() {
-				document.getElementById("texto1").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporary incididunt ut labore et dolore magna aliqua. "
+			function surgir_texto(dado) {
+				switch (dado){
+					case "texto1":
+						document.getElementById("texto1").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporary incididunt ut labore et dolore magna aliqua. ";
+						break;
+
+					case "texto2":
+						document.getElementById("texto2").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporary incididunt ut labore et dolore magna aliqua. ";
+						break;
+
+					case "texto3":
+						document.getElementById("texto3").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporary incididunt ut labore et dolore magna aliqua. ";
+						break;
+				}		
 			};
 
-			function apagar_texto1() {
-				document.getElementById("texto1").innerHTML = " "
-			};
+			function apagar_texto(dado) {
+				switch (dado){
+					case "texto1":
+						document.getElementById("texto1").innerHTML = " ";
+						break;
 
-			function surgir_texto2() {
-				document.getElementById("texto2").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporary incididunt ut labore et dolore magna aliqua."
-			};
+					case "texto2":
+						document.getElementById("texto2").innerHTML = " ";
+						break;
 
-			function apagar_texto2() {
-				document.getElementById("texto2").innerHTML = " "
+					case "texto3":
+						document.getElementById("texto3").innerHTML = " ";
+						break;
+				}	
 			};
-
-			function surgir_texto3() {
-				document.getElementById("texto3").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporary incididunt ut labore et dolore magna aliqua."
-			};
-
-			function apagar_texto3() {
-				document.getElementById("texto3").innerHTML = " "
-			};
-
 
 		</script>
 	</section>
