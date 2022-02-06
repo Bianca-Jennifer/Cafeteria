@@ -1,3 +1,14 @@
+/* CABEÇALHO */
+function acessar(dado) {
+    if (dado==="sobre-n") {
+        window.scrollBy(0, 1700);
+    } else {
+        window.scroll(0,1000);
+    }               
+};
+
+
+/* SOBRE NÓS */
 function surgir_texto(dado) {
     switch (dado){
         case "texto1":
