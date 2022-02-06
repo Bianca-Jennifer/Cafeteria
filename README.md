@@ -1,2 +1,2 @@
 # Cafeteria
- Website de cafeteria com HTML, CSS E Java Script. 
+ Website responsivo sobre cafeteria com HTML, CSS E JavaScript. 
