@@ -2,9 +2,7 @@
 ul {list-style: none;}
 h1{font-size: 2rem; margin-bottom: 35px; text-align: center; margin-top: 30px;}
 p {max-width: 800px; margin-bottom: 35px;  text-align: center; font-family: 'Open'}
-html {
-  scroll-behavior: smooth;
-}
+html {scroll-behavior: smooth;}
 
 /* FONTS */
 @font-face {
@@ -125,11 +123,30 @@ background-repeat: no-repeat; display: flex; flex-direction: column; align-items
 }
 
 .contatos {background-color: #E0C097; padding-bottom: 20px;}
-.contatos .conteudo {display: flex; direction: column; margin-left: 40px;}
+.contatos .conteudo {display: flex; flex-direction: row; margin-left: 40px;}
 .contatos .conteudo iframe {height: 350px;}
 .contatos .conteudo ul {margin-left: 90px; font-size: 25px;}
-.contatos .conteudo ul li i, li {color: #5C3D2E;}
-.contatos .conteudo .segunda_parte {margin-left: 20px; margin-top: -10px;}
+.contatos .conteudo ul li i, li {color: #2D2424;}
+.contatos .conteudo .segunda_parte {margin-left: 50px; margin-top: -10px;}
 .contatos .conteudo li:first-child {margin-bottom: -5px;}
 
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+   .contatos .conteudo {flex-direction: column; align-items: center; margin-left: 0px;}
+   .contatos .conteudo ul {margin-top: 20px;}
+}
 
+@media (max-width: 600px) {
+    .contatos .conteudo iframe {width: 400px;}
+    .contatos .conteudo ul {font-size: 20px; margin-left: 0px;}
+    
+}
+
+/* RODAPÉ */
+footer {background-color: #2D2424; color: #E0C097; display: flex; justify-content: center; font-size: 15px;}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    footer {font-size: 10px;}
+    
+}
